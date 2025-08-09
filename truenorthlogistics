@@ -1,0 +1,220 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TrueNorth Logistics Services</title>
+  <meta name="description" content="TrueNorth Logistics Services — trusted dispatch solutions for owner-operators and fleets across the USA. Friendly service, competitive rates, expert route planning." />
+  <style>
+    :root{
+      --navy:#0b2744;
+      --accent:#ff7a2d;
+      --muted:#6b7280;
+      --card:#f8fafc;
+      --radius:14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:#fff;color:var(--navy);line-height:1.5}
+    header{background:linear-gradient(180deg,var(--navy),#072034);color:#fff;padding:28px 18px}
+    .container{max-width:1100px;margin:0 auto;padding:0 18px}
+
+    /* nav */
+    nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;background:linear-gradient(135deg,var(--accent),#ff9c58);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff}
+    .nav-links{display:flex;gap:18px;font-weight:600}
+    .cta{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none}
+
+    /* hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:40px 0}
+    .hero h1{font-size:34px;margin:0 0 12px}
+    .hero p{color:var(--card);color:#e6eef6;margin:0 0 18px}
+    .hero .features{display:flex;gap:12px;margin-top:14px}
+    .feature{background:rgba(255,255,255,0.06);padding:10px 12px;border-radius:10px}
+
+    /* card */
+    .card{background:#fff;border-radius:var(--radius);box-shadow:0 6px 20px rgba(11,39,68,0.07);padding:18px}
+
+    /* sections */
+    section{padding:44px 0;border-bottom:1px solid #f1f5f9}
+    h2{margin:0 0 18px;color:var(--navy)}
+    p.lead{color:var(--muted);max-width:780px}
+
+    /* services grid */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .service{padding:18px;border-radius:12px;background:linear-gradient(180deg,#fff,#fcfdff);border:1px solid #eef2f7}
+    .service h3{margin:0 0 8px}
+
+    /* testimonials */
+    .testimonials{display:flex;gap:14px;overflow-x:auto;padding-bottom:6px}
+    .testimonial{min-width:260px;padding:16px;border-radius:12px;background:linear-gradient(180deg,#fff,#fbfcfe);border:1px solid #eef2f7}
+
+    /* contact */
+    form{display:grid;gap:12px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6eef6;font-size:14px}
+    button{background:var(--navy);color:#fff;padding:12px;border-radius:10px;border:0;font-weight:700}
+
+    footer{padding:24px 0;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .nav-links{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="logo">TN</div>
+          <div>
+            <div style="font-weight:800">TrueNorth</div>
+            <div style="font-size:12px;color:rgba(255,255,255,0.8)">Logistics Services</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:14px">
+          <div class="nav-links">
+            <a href="#about" style="color:rgba(255,255,255,0.95);text-decoration:none">About</a>
+            <a href="#services" style="color:rgba(255,255,255,0.95);text-decoration:none">Services</a>
+            <a href="#testimonials" style="color:rgba(255,255,255,0.95);text-decoration:none">Testimonials</a>
+            <a href="#contact" style="color:rgba(255,255,255,0.95);text-decoration:none">Contact</a>
+          </div>
+          <a class="cta" href="#contact">Get Dispatch</a>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <div>
+          <h1>Trusted dispatch solutions for owner-operators & fleets</h1>
+          <p class="lead">TrueNorth delivers fast, reliable, and affordable dispatch services across the USA. We treat drivers like family — friendly support, competitive rates, and expert route planning to keep your wheels turning.</p>
+          <div class="features">
+            <div class="feature">24/7 Support</div>
+            <div class="feature">Competitive Rates</div>
+            <div class="feature">Route Optimization</div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <h3 style="margin-top:0">Get a Free Quote</h3>
+            <form onsubmit="event.preventDefault(); alert('Contact form needs a backend. I can help set up GitHub Pages + Formspree or Netlify forms.');">
+              <input type="text" name="name" placeholder="Full name" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <select name="type">
+                <option>Owner-Operator</option>
+                <option>Small Fleet</option>
+                <option>Broker / Other</option>
+              </select>
+              <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
+              <button type="submit">Request Quote</button>
+            </form>
+            <small style="display:block;margin-top:10px;color:var(--muted)">Contact form needs backend — instructions included in README.</small>
+          </div>
+
+          <div style="margin-top:12px;font-size:13px;color:var(--muted)">
+            <div><strong>Phone:</strong> (123) 456-7890</div>
+            <div><strong>Email:</strong> info@truenorth.example</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About TrueNorth</h2>
+      <p class="lead">TrueNorth Logistics Services is a dedicated dispatch company focused on keeping trucks moving and profits rising. We offer personalized service for owner-operators and small fleets, combining human support with practical technology to reduce downtime and complexity.</p>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="service">
+          <h3>Full-Service Dispatch</h3>
+          <p>Load sourcing, broker communication, rate negotiation, and dispatch paperwork — we handle it all so you can drive.</p>
+        </div>
+        <div class="service">
+          <h3>Route Optimization</h3>
+          <p>We plan efficient routes to minimize deadhead miles and deliver faster turnarounds.</p>
+        </div>
+        <div class="service">
+          <h3>24/7 Support</h3>
+          <p>Real people available around the clock to answer questions and move freight when you need it.</p>
+        </div>
+        <div class="service">
+          <h3>Back-Office Support</h3>
+          <p>Documentation, rate confirmations, and invoicing support to keep your operations clean and compliant.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>What Drivers Say</h2>
+      <div class="testimonials">
+        <div class="testimonial card">
+          <strong>Jamal — Owner-Operator</strong>
+          <p>"TrueNorth keeps me full and paid. Friendly team and real support on the road."</p>
+        </div>
+        <div class="testimonial card">
+          <strong>Rosa — Small Fleet Owner</strong>
+          <p>"Professional dispatchers, fast communication, and great rates. Highly recommend."</p>
+        </div>
+        <div class="testimonial card">
+          <strong>Mike — Independent Driver</strong>
+          <p>"They treated me like family and found consistent loads across routes I prefer."</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p class="lead">Ready to get started? Send us a message or use the form to request a quote. We’ll respond quickly and treat you like family.</p>
+      <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px;align-items:start">
+        <div class="card">
+          <form onsubmit="event.preventDefault(); alert('This demo form needs a backend. See README below for Formspree/Netlify instructions.');">
+            <input type="text" name="name" placeholder="Full name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="tel" name="phone" placeholder="Phone" />
+            <textarea name="message" rows="6" placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>Office</h3>
+          <p>TrueNorth Logistics Services<br>USA-based dispatch support<br>Phone: (123) 456-7890<br>Email: info@truenorth.example</p>
+          <h4 style="margin-top:12px">Follow Us</h4>
+          <p style="margin:0">Facebook • Instagram • LinkedIn</p>
+        </div>
+      </div>
+
+      <div style="margin-top:18px;background:#fafafa;padding:12px;border-radius:10px;border:1px solid #eef2f7">
+        <strong>Deployment / Next steps</strong>
+        <ol style="margin-top:8px;color:var(--muted)">
+          <li>Replace placeholder phone/email with real contact details.</li>
+          <li>Connect the contact form to a backend: Formspree, Netlify Forms, or a simple server endpoint.</li>
+          <li>Deploy to GitHub Pages, Netlify, or Vercel. I can walk you through push + publish steps.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+      <div>&copy; " + new Date().getFullYear() + " TrueNorth Logistics Services</div>
+      <div style="color:var(--muted)">Designed for owner-operators & small fleets</div>
+    </div>
+  </footer>
+
+  <script>
+    // Note: update the footer year string above if you copy the HTML.
+    (function(){
+      try{
+        const footer = document.querySelector('footer div');
+        if(footer) footer.firstElementChild.textContent = `© ${new Date().getFullYear()} TrueNorth Logistics Services`;
+      }catch(e){/*ignore*/}
+    })();
+  </script>
+</body>
+</html>
